@@ -43,7 +43,7 @@ const Story = () => {
         <div className='place-self-center'>
           <h1 className='text-[#a64af7] tracking-[10px] text-[2rem] lg:text-5xl drop-shadow-2xl w-[300px] text-shadow-1  specialH2 font-black' >Meet the Deviants</h1>
         </div>
-        <div className='place-items-center place-content-center row-span-2 grid grid-cols-2 h-auto h-[340px] md:h-[600px] overflow-hidden'>
+        <div className='place-items-center place-content-center row-span-2 grid grid-cols-2 h-auto h-[340px] md:h-[400px] overflow-hidden'>
           <div className=''>
             <video
               src={deviant}
@@ -71,8 +71,8 @@ const Story = () => {
             </marquee>
           </div>  
         </div>
-        <div className='px-10 pt-10'>
-          <p className='text-white text-base font-bold lg:text-xl'>
+        <div className='px-10 pt-10 pl-[5%] pr-[5%]'>
+          <p className='text-white text-base font-bold lg:text-xl pl-[5%] pr-[5%]'>
             Our mission is simple: <span className='text-[#a64af7] textShadow font-bold inline-block md-block'>Take over the PvP and P2E gaming experience in the metaverse space.
             </span>
             <br />

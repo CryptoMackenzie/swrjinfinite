@@ -53,7 +53,7 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "The New Standard For Freedom and Self-governance",
+                    "The New Standard For Freedom and Self-Governance",
                   ],
                   autoStart: true,
                   loop: true,
@@ -97,12 +97,15 @@ const Home = () => {
       </div>
 
       <div className="flex pt-20 pb-10 mt-10   justify-center items-center">
-        <Vimeo
-          showTitle={false}
-          className="video"
-          video="669116664"
-          width={Math.min(screenWidth, 1000)}
-        />
+        <iframe 
+          width={`${Math.min(screenWidth, 1000)}`}
+          height={`${0.5625*Math.min(screenWidth, 1000)}`}
+          src="https://www.youtube-nocookie.com/embed/8Ihf45j48Jk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
     </>
   );

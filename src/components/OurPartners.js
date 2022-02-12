@@ -1,6 +1,7 @@
 import React from 'react';
 import infivr from "../assets/icons/infi.jpeg"
 import polygon from "../assets/icons/polygon.jpeg"
+import whitebud from "../assets/icons/whitebud.png"
 import coin from '../assets/News/cointelegraph.png'
 import crypto from '../assets/News/Cryptonews.png'
 import newsBtc from '../assets/News/newsbtc-logo.jpg'
@@ -20,9 +21,22 @@ const OurPartners = () => {
 
     <div className='w-full pt-24 justify-center items-center md:m-auto px-10'    >
       <h1 className='text-[#a64af7] tracking-[10px] text-[2rem] lg:text-5xl text-center drop-shadow-2xl text-shadow-1  specialH2'>Our Partners</h1>
-      <div className='flex justify-center gap-x-10 py-10'>
-        <div className='w-[300px] sm:w-[200px]  shadow-2xl hover:shadow-[#a64af7] duration-1000 ml-[10%] bg-white flex items-center justify-center'><img src={infivr} className='w-[250px]' alt="InfiVR"/></div>
-        <div className='w-[300px] sm:w-[200px]  shadow-2xl ease-in-out duration-1000 hover:shadow-[#a64af7] mr-[10%] bg-white flex items-center justify-center'><img src={polygon} alt="Polygon Matic" className='w-[250px]' /></div>
+      <div className='grid grid-cols-1 sm:grid-cols-3 flex place-items-center place-content-center justify-center gap-x-10 py-10'>
+        <div className='w-[300px] sm:w-[200px] shadow-2xl hover:shadow-[#a64af7] duration-1000 mt-[5%] sm:ml-[10%] bg-white flex items-center justify-center'>
+          <a href="https://www.infivr.com/" target="_blank">
+            <img src={infivr} className='w-[250px]' alt="InfiVR"/>
+          </a>
+        </div>
+        <div className='w-[300px] sm:w-[200px] shadow-2xl ease-in-out duration-1000 mt-[5%] hover:shadow-[#a64af7] bg-white flex items-center justify-center'>
+          <a href="https://polygon.technology/" target="_blank">
+            <img src={polygon} alt="Polygon Matic" className='w-[250px]' />
+          </a>
+        </div>
+        <div className='w-[300px] sm:w-[200px] shadow-2xl ease-in-out duration-1000 mt-[5%] hover:shadow-[#a64af7] sm:mr-[10%] bg-white flex items-center justify-center'>
+          <a href="https://www.whitebudstudios.com/" target="_blank">
+            <img src={whitebud} alt="Whitebud Studios" className='w-[250px]' />
+          </a>
+        </div>
       </div>
     </div>
     <div className='px-10 pt-20'>
