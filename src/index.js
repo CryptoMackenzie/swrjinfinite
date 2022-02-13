@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Prologue from './components/prolouge';
 import Tokenomics from './components/Tokenomics';
 
-function SwarajCoin() {
+function AstraNova() {
   return (
     <BrowserRouter>
       <Routes>
@@ -20,7 +20,7 @@ function SwarajCoin() {
 }
 ReactDOM.render(
   <React.StrictMode>
-    <SwarajCoin />
+    <AstraNova />
   </React.StrictMode>,
   document.getElementById('root')
 );

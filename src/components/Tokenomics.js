@@ -63,7 +63,7 @@ const Tokenomics = () => {
   <a className='m-9 hover:text-[#e5ff00] ease-in-out duration-500 vrt' href="https://swarajcoin.medium.com/"><AiFillMediumCircle fontSize={28}/></a>
   {/* <a className='m-9 hover:text-[#32cf83] ease-in-out duration-500 vrt text-4xl w-[10px]' href="https://linktr.ee/swarajcoinofficial"><Icon icon="simple-icons:linktree" /></a> */}
 </div>
-<div id="contactUs"className='w-[full] text-2xl text-[#9c23e8] h-[10vh] flex items-center justify-between pb-[2%]'><span className='ml-[10%] font-bold text-3xl'>info@swarajcoin.com</span>   <span className='mr-[20%]'> SWARAJ COIN ©2022 All Rights Reserved</span></div>
+<div id="contactUs"className='w-[full] text-2xl text-[#9c23e8] h-[10vh] flex items-center justify-between pb-[2%]'><span className='ml-[10%] font-bold text-3xl'>info@swarajcoin.com</span>   <span className='mr-[20%]'> ASTRA NOVA COIN ©2022 All Rights Reserved</span></div>
 </div>
 
 </div>;

@@ -96,7 +96,7 @@ const OurPartners = () => {
     </div>
     <div id="contactUs" className='w-[full] text-xs text-[#9c23e8] text-center'>
       <span className='block font-bold'>info@swarajcoin.com</span>
-      <span className='block mt-1'> SWARAJ COIN ©2022 All Rights Reserved</span>
+      <span className='block mt-1'> ASTRA NOVA ©2022 All Rights Reserved</span>
     </div>
 
 

@@ -128,7 +128,7 @@ export function Prologue() {
       <a className='m-9 hover:text-[#0272fa] ease-in-out duration-500 vrt' href="https://twitter.com/swarajcoin"><BsTwitter fontSize={28}/></a>
       {/* <a className='m-9 hover:text-[#32cf83] ease-in-out duration-500 vrt text-4xl w-[10px]' href="https://linktr.ee/swarajcoinofficial"><Icon icon="simple-icons:linktree" /></a> */}
     </div>
-  <div className='w-[full] h-[10vh] flex items-center justify-center pb-[2%]'> SWARAJ COIN ©2022 All Rights Reserved</div>
+  <div className='w-[full] h-[10vh] flex items-center justify-center pb-[2%]'> ASTRA NOVA COIN ©2022 All Rights Reserved</div>
   </div>
 
     </div>

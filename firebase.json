@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "swarajcoin",
+    "site": "astranova",
     "public": "build",
     "ignore": [
       "firebase.json",

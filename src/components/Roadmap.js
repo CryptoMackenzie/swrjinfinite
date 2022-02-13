@@ -83,7 +83,7 @@ const Roadmap = () => {
                 Debuit NFT Collaboration with top crypto influencers
               </div></Fade>
               <Fade left><div className="text-white m-2">First Minigame launch</div></Fade>
-              <Fade left><div className="text-white m-2">Release Swaraj Bazinga</div></Fade>
+              <Fade left><div className="text-white m-2">Release Astra Nova Bazinga</div></Fade>
               <Fade left><div className="text-white m-2">
                 Metaverse - Unreal Engine Development
               </div></Fade>
@@ -120,16 +120,16 @@ const Roadmap = () => {
 
               <Fade right><div className="text-white m-2">Metaverse Beta version</div></Fade>
               <Fade right><div className="text-white m-2">
-                Swaraj army reaching milestones & burn event
+                Astra Nova army reaching milestones & burn event
               </div></Fade>
-              <Fade right><div className="text-white m-2">Building swaraj ecosystem</div></Fade>
+              <Fade right><div className="text-white m-2">Building Astra Nova ecosystem</div></Fade>
               <Fade right><div className="text-white m-2">
                 Voting rights to the people-$GTKN
               </div></Fade>
               <Fade right><div className="text-white m-2">
                 implement 1% Burn Tax on transactions
               </div></Fade>
-              <Fade right><div className="text-white m-2">Swaraj Go Green Movement</div></Fade>
+              <Fade right><div className="text-white m-2">Astra Nova Go Green Movement</div></Fade>
             </div>
           </li>
           <li>
@@ -137,7 +137,7 @@ const Roadmap = () => {
               <time>Phase 7: 2023 Q2 </time>
 
               <Fade left><div className="text-white m-2">NFT upgrades/ accessories drop</div></Fade>
-              <Fade left><div className="text-white m-2">Swaraj army reaching milestones</div></Fade>
+              <Fade left><div className="text-white m-2">Astra Nova army reaching milestones</div></Fade>
               <Fade left><div className="text-white m-2">Listing on more exchanges</div></Fade>
               <Fade left><div className="text-white m-2">
                 Raising funds for major exchange listings
@@ -151,7 +151,7 @@ const Roadmap = () => {
               <Fade right><div className="text-white m-2">
                 AI training platform for Sentinel Series
               </div></Fade>
-              <Fade right><div className="text-white m-2">SWARAJ Launchpad</div></Fade>
+              <Fade right><div className="text-white m-2">Astra Nova Launchpad</div></Fade>
               <Fade right><div className="text-white m-2">2nd Charity Funds Release</div></Fade>
             </div>
           </li>
@@ -159,8 +159,8 @@ const Roadmap = () => {
             <div className="place-items-center place-content-center">
               <time>Phase 9: 2023 Q4 </time>
 
-              <Fade left><div className="text-white m-2">Swaraj DEX</div></Fade>
-              <Fade left><div className="text-white m-2">Swaraj wallet/app</div></Fade>
+              <Fade left><div className="text-white m-2">Astra Nova DEX</div></Fade>
+              <Fade left><div className="text-white m-2">Astra Nova wallet/app</div></Fade>
               <Fade left><div className="text-white m-2">
                 New products and services included in app
               </div></Fade>
