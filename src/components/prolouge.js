@@ -1,4 +1,4 @@
-import logo from "../assets/icons/swaraj.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import {BsInstagram, BsTwitter} from "react-icons/bs"
 
@@ -11,7 +11,7 @@ export function Prologue() {
       <div className="Prologue">
         <div>
           <Link to="/">
-            <img className="w-[100px] m-12" src={logo} alt="Logo" />
+            <img className="w-[250px] m-12" src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="mt-3 items-center flex flex-col justify-center">

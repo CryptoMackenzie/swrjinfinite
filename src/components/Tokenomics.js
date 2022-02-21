@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/icons/swaraj.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import {BsInstagram, BsTwitter} from "react-icons/bs"
 import {BsFacebook} from "react-icons/bs"

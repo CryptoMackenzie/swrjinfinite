@@ -1,5 +1,4 @@
 import React from "react";
-import Vimeo from "@u-wave/react-vimeo";
 import logo from "../assets/logo.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import polygonLogo from "../assets/icons/polygon-badge.png";
@@ -18,7 +17,7 @@ const Home = () => {
         {/* Header */}
         <nav className="px-10 pt-5 grid grid-cols-1 lg:grid-cols-4 ">
           <div className="flex justify-center lg:justify-start">
-              <img src={logo} alt="logo" className="w-[100px]" />
+              <img src={logo} alt="logo" className="w-[250px]" />
           </div>
 
           <div className="text-right hidden lg:block col-span-3">
@@ -94,18 +93,6 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
-
-      <div className="flex pt-20 pb-10 mt-10   justify-center items-center">
-        <iframe 
-          width={`${Math.min(screenWidth, 1000)}`}
-          height={`${0.5625*Math.min(screenWidth, 1000)}`}
-          src="https://www.youtube-nocookie.com/embed/8Ihf45j48Jk"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
       </div>
     </>
   );
