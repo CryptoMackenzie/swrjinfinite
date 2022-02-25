@@ -458,6 +458,16 @@ strong {
 h1 {
   color: white;
 }
+.roadmap_items div{
+  margin-top: 2.5rem;
+}
+.rdmapcard {
+  backdrop-filter: blur(11px) saturate(159%);
+  -webkit-backdrop-filter: blur(11px) saturate(159%);
+  background-color: rgba(96, 43, 95, 0.53);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
 
 @media screen and (max-width: 600px) {
   .PrologueContent {
@@ -683,6 +693,14 @@ button {
   font-weight: 800;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
+}
+
+.btn_roadmap::before{
+  background: none !important;
+}
+.btn_roadmap{
+  border-bottom: 4px solid #a64af7;
+  border-radius: 0px !important;
 }
 
 button:before,

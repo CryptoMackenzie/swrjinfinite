@@ -7,6 +7,7 @@ import OurPartners from "./components/OurPartners";
 import Roadmap from "./components/Roadmap";
 import Sequncer from "./components/Sequncer";
 import { useWindowWidth } from "@react-hook/window-size";
+import RoadMap2 from "./components/RoadMap2";
 
 import Story from "./components/Story";
 
@@ -14,11 +15,7 @@ function App() {
   const screenWidth = useWindowWidth();
   return (
     <div>
-      {/*
-     <Story/>
-     <Carousal/>
-     <Roadmap/>*/}
-      {/* <OurPartners/>  */}
+      
       <Home/>
       <Story/>
       
@@ -30,7 +27,7 @@ function App() {
       <div className="flex pokercard justify-center justify-items-center">
         <FeatureCards />
       </div>
-      <Roadmap/>
+      <RoadMap2/>
       <OurPartners/>
       
       <div className="twinkling-wrapper w-[100vw] h-[100vh] overflow-x-hidden">

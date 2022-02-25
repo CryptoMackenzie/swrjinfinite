@@ -1,9 +1,13 @@
 import React from "react";
+import { FaItalic } from "react-icons/fa";
 
 import Fade from 'react-reveal/Fade';
 import  tick from "../assets/signtick.png"
 
 const Roadmap = () => {
+  // a unit test that checks if the component is rendering properly
+ 
+
 //   var items = document.querySelectorAll(".timeline li");
 
 //   function isElementInViewport(el) {
