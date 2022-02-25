@@ -17,6 +17,7 @@
     "react-sequence-animator": "^2.3.0",
     "react-spring": "9.0.0-beta.3",
     "react-use-gesture": "5.0.0",
+    "swiper": "^8.0.6",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },

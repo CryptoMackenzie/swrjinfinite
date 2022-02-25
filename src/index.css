@@ -460,11 +460,12 @@ h1 {
 }
 .roadmap_items div{
   margin-top: 2.5rem;
+  margin-left: 3rem;
 }
 .rdmapcard {
-  backdrop-filter: blur(11px) saturate(159%);
-  -webkit-backdrop-filter: blur(11px) saturate(159%);
-  background-color: rgba(96, 43, 95, 0.53);
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-image: radial-gradient(circle, #4e0131c4, #390a32cc, #240e2ec4, #130b26c9, #00031bc2);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -699,15 +700,50 @@ button {
   background: none !important;
 }
 .btn_roadmap{
-  border-bottom: 4px solid #a64af7;
   border-radius: 0px !important;
 }
+.btn_border{
+  border-bottom: 4px solid #a64af7;
+  border-radius: 0px !important;
+  color: #a64af7;
+}
+.btn_roadmap:s{
+  background: #a64af7 !important;
+}
+.progress_bar::before{
+  content: url("../src/assets/progress.svg");
+  margin-right:.8rem;
+  margin-left: 1px;
 
+  
+}
+.tick_mark::before{
+  content: url("../src/assets/done.svg");
+  margin-right:.8rem;
+}
+.tick_mark{
+  display:flex ;
+}
+.progress_bar{
+  display: flex;
+}
 button:before,
 button:after {
   content: " ";
   position: absolute;
   border-radius: 6px;
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+    
+  }
+  100% {
+    transform: rotate(360deg);
+    
+  }
+
+  
 }
 
 button:before {

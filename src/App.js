@@ -8,14 +8,16 @@ import Roadmap from "./components/Roadmap";
 import Sequncer from "./components/Sequncer";
 import { useWindowWidth } from "@react-hook/window-size";
 import RoadMap2 from "./components/RoadMap2";
+import FeatureCard2 from "./components/FeatureCard2";
 
 import Story from "./components/Story";
+import Features1 from "./components/Features1";
 
 function App() {
   const screenWidth = useWindowWidth();
   return (
     <div>
-      
+      {/* <Features1/> */}
       <Home/>
       <Story/>
       
