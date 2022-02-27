@@ -1,59 +1,53 @@
 import React from 'react'
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
+import "../components/component Styles/Carousel2.css"
 
 const Carousel2 = () => {
-    const state = {};
-const carouselList = document.querySelector('.carousel__list');
-const carouselItems = document.querySelectorAll('.carousel__item');
-const elems = Array.from(carouselItems);
-
-carouselList.addEventListener('click', function (event) {
-  var newActive = event.target;
-  var isItem = newActive.closest('.carousel__item');
-
-  if (!isItem || newActive.classList.contains('carousel__item_active')) {
-    return;
-  };
   
-  update(newActive);
-});
-
-const update = function(newActive) {
-  const newActivePos = newActive.dataset.pos;
-
-  const current = elems.find((elem) => elem.dataset.pos == 0);
-  const prev = elems.find((elem) => elem.dataset.pos == -1);
-  const next = elems.find((elem) => elem.dataset.pos == 1);
-  const first = elems.find((elem) => elem.dataset.pos == -2);
-  const last = elems.find((elem) => elem.dataset.pos == 2);
   
-  current.classList.remove('carousel__item_active');
-  
-  [current, prev, next, first, last].forEach(item => {
-    var itemPos = item.dataset.pos;
-
-    item.dataset.pos = getPos(itemPos, newActivePos)
-  });
-};
-
-const getPos = function (current, active) {
-  const diff = current - active;
-
-  if (Math.abs(current - active) > 2) {
-    return -current
-  }
-
-  return diff;
-}
   return (
-    <div><div class="carousel_1">
-    <ul class="carousel__list">
-      <li class="carousel__item" data-pos="-2">1</li>
-      <li class="carousel__item" data-pos="-1">2</li>
-      <li class="carousel__item" data-pos="0">3</li>
-      <li class="carousel__item" data-pos="1">4</li>
-      <li class="carousel__item" data-pos="2">5</li>
-    </ul>
-  </div></div>
+    <div  className='mt-[10%]'>
+         <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerGroup={3}
+        loop={true}
+        loopFillGroupWithBlank={true}
+    
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><button
+          id="q1b"
+          className="min-w-[50px] btn_roadmap btn_border "
+          onClick={() => {
+            // setQValue("q1");
+          }}
+        >
+          <span className="flex ">
+            Q1 <span className="ml-2 ml-0">2021</span>
+          </span>
+        </button></SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </div>
   )
 }
 

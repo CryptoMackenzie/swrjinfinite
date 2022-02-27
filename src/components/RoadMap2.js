@@ -1,20 +1,28 @@
 import React from "react";
 import { useState } from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
+import "../components/component Styles/Carousel2.css";
 
 function RoadMap2() {
   const [qValue, setQValue] = useState("q1");
-  
 
   var btns = document.getElementsByClassName("btn_roadmap");
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("btn_border");
-    current[0].className = current[0].className.replace(" btn_border", "");
-    this.className += " btn_border";
-  });
-}
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("btn_border");
+      current[0].className = current[0].className.replace(" btn_border", "");
+      this.className += " btn_border";
+    });
+  }
 
   return (
     <div className="flex  flex-col justify-center w-full items-center m-10">
@@ -23,53 +31,80 @@ for (var i = 0; i < btns.length; i++) {
           Release RoadMap
         </h1>
       </div>
-
-      <div className="flex md:w-[50%] w-[90%] justify-between m-10 btnContainer">
-        <button
-          id="q1b"
-          className="min-w-[50px] btn_roadmap btn_border "
-          onClick={() => {
-            setQValue("q1");
-          }}
+      <div className="w-full h-full">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          slidesPerGroup={3}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
         >
-          <span className="flex md:flex-row flex-col">
-            Q1 <span className="md:ml-2 ml-0">2021</span>
-          </span>
-        </button>
-        <button
-          id="q2b"
-          className="min-w-[50px] btn_roadmap"
-          onClick={() => {
-            setQValue("q2");
-          }}
-        >
-          <span className="flex md:flex-row flex-col">
-            Q1 <span className="md:ml-2 ml-0"> 2021</span>
-          </span>
-        </button>
-        <button
-          id="q3b"
-          className="min-w-[50px] btn_roadmap"
-          onClick={() => {
-            setQValue("q3");
-          }}
-        >
-          <span className="flex md:flex-row flex-col">
-            Q1 <span className="md:ml-2 ml-0"> 2021</span>
-          </span>
-        </button>
-        <button
-          id="q4b"
-          className="min-w-[50px] max-w-[130px] btn_roadmap"
-          onClick={() => {
-            setQValue("q4");
-          }}
-        >
-          <span className="flex md:flex-row flex-col">
-            Q1 <span className="md:ml-2 ml-0"> 2021</span>
-          </span>
-        </button>
+          <SwiperSlide>
+            <button
+              id="q1b"
+              className="min-w-[50px] btn_roadmap btn_border "
+              onClick={() => {
+                setQValue("q1");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 ">2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q2b"
+              className="min-w-[50px] btn_roadmap"
+              onClick={() => {
+                setQValue("q2");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2"> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q3b"
+              className="min-w-[50px] btn_roadmap"
+              onClick={() => {
+                setQValue("q3");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q4");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper>
       </div>
+
       <div className="w-[75%] h-auto rdmapcard text-2xl">
         <ul>
           {qValue === "q1" ? (

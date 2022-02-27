@@ -1,0 +1,67 @@
+.swiper {
+    width: 90%;
+    height: 10vh;
+    /* background-color: brown; */
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-button-next::after {
+    color: #a64af7aa !important;
+    /* display: none; */
+    font-size: 1rem;
+    /* content: url("../../assets/arrow-right-solid.svg") !important;  */
+    font-size: 20px !important;
+    animation: moveLeftRight 2s infinite ease-in-out;
+    
+}
+
+.swiper-button-prev::after {
+    color: #a64af7aa !important;
+    /* display: none; */
+    font-size: 1rem;
+    font-weight: 900 !important;
+    /* content: url("../../assets/arrow-right-solid.svg") !important;  */
+    font-size: 20px !important;
+    animation: moveRightLeft 2s infinite ease-in-out;
+    
+}
+
+@keyframes moveLeftRight {
+    0%{
+        transform: translateX(10px);
+    }
+50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+@keyframes moveRightLeft {
+    0%{
+        transform: translateX(0);
+    }
+50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

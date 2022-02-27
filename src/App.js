@@ -18,7 +18,6 @@ function App() {
   const screenWidth = useWindowWidth();
   return (
     <div>
-    
       {/* <Carousel2/> */}
       <Home/>
       <Story/>
