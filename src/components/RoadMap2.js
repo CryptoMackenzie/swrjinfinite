@@ -31,7 +31,7 @@ function RoadMap2() {
           Release RoadMap
         </h1>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full mb-10">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}

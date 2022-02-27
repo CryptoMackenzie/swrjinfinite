@@ -35,7 +35,7 @@ const Carousel2 = () => {
           }}
         >
           <span className="flex ">
-            Q1 <span className="ml-2 ml-0">2021</span>
+            Q1 <span className="ml-2">2021</span>
           </span>
         </button></SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -52,3 +52,4 @@ const Carousel2 = () => {
 }
 
 export default Carousel2
+
