@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useWindowWidth } from "@react-hook/window-size";
 
 // import required modules
-import { Pagination, Navigation,Autoplay } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 import "../components/component Styles/Carousel2.css";
 
@@ -27,12 +27,18 @@ function RoadMap2() {
   }
 
   return (
-    <div className="flex  flex-col justify-center w-full items-center m-10">
+    <div className="flex  flex-col justify-center w-full items-center">
       <div>
         <h1 className="text-[#a64af7] tracking-[10px] text-[2rem] mt-5 lg:text-5xl text-center drop-shadow-2xl text-shadow-1 specialH2 m-10">
           Release RoadMap
         </h1>
-        {screenWidth<=750?<p className="text-base text-center">(Swipe Left/Right on the Buttons)</p> :""}
+        {screenWidth <= 750 ? (
+          <p className="text-base text-center">
+            (Swipe Left/Right on the Buttons)
+          </p>
+        ) : (
+          ""
+        )}
       </div>
       <div className="w-[90%] h-full mb-10">
         <Swiper
@@ -41,8 +47,8 @@ function RoadMap2() {
           slidesPerGroup={3}
           loop={true}
           loopFillGroupWithBlank={true}
-          navigation={screenWidth>=750?true:false}
-          modules={[Pagination,Autoplay, Navigation]}
+          navigation={screenWidth >= 750 ? true : false}
+          modules={[Pagination, Autoplay, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -100,15 +106,99 @@ function RoadMap2() {
               </span>
             </button>
           </SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q5");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q6");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q7");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q8");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q9");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            {" "}
+            <button
+              id="q4b"
+              className="min-w-[50px] max-w-[130px] btn_roadmap"
+              onClick={() => {
+                setQValue("q10");
+              }}
+            >
+              <span className="flex ">
+                Q1 <span className="ml-2 "> 2021</span>
+              </span>
+            </button>
+          </SwiperSlide>
         </Swiper>
       </div>
 
-      <div className="w-[75%] h-auto rdmapcard text-2xl">
+      <div className="md:w-[75%] w-[90%] h-auto rdmapcard text-2xl">
         <ul>
           {qValue === "q1" ? (
             <li
@@ -203,6 +293,141 @@ function RoadMap2() {
           )}
 
           {qValue === "q4" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+          {qValue === "q5" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+          {qValue === "q6" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+
+          {qValue === "q7" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+          {qValue === "q8" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+
+          {qValue === "q9" ? (
+            <li
+              id="q1"
+              className="roadmap_items m-2 flex justify-start md:ml-10 items-center"
+            >
+              <div className="place-items-center place-content-center">
+                <div className="text-white m-1">Initial Coin Marketing</div>
+                <div className="text-white m-2">Game Studio Partnerships</div>
+                <div className="text-white m-1">Private Sale </div>
+                <div className="text-white  m-1">Website Launch v2</div>
+
+                <div className="text-white m-1">The Deviants NFT Drop</div>
+                <div className="text-white m-1">Presale</div>
+                <div className="text-white m-1">
+                  Coin Gecko & CoinMarketCap listing
+                </div>
+                <div className="text-white m-1">Launch Pad Sale</div>
+              </div>
+            </li>
+          ) : (
+            ""
+          )}
+
+          {qValue === "q10" ? (
             <li
               id="q1"
               className="roadmap_items m-2 flex justify-start md:ml-10 items-center"

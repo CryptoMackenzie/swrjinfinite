@@ -86,7 +86,7 @@ const Story = () => {
           <h1 className='text-[#a64af7] tracking-[10px] text-[2rem] lg:text-5xl drop-shadow-2xl pt-[5%] pl-[6%] text-shadow-1  specialH2 font-black pr-10' >Orion's Realm Series</h1>
         </div>
         <div className="mt-10 row-span-2 place-self-center">
-          <img src={orion} alt="" className=' boxs' />
+          <img src={orion} alt="" className=' boxs md:w-[100%] place-self-center ' />
         </div>
         <div className='md:col-start-2 mt-[5%] pl-[5%] pr-[5%]'>
           <p className='text-white text-base font-bold lg:text-xl pl-[5%] pr-[5%]'>

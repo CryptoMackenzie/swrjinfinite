@@ -18,7 +18,7 @@ import FeaturesSlider from "./components/FeaturesSlider";
 function App() {
   const screenWidth = useWindowWidth();
   return (
-    <div>
+    <div className="overflow-x-hidden">
       
       {/* <Carousel2/> */}
       <Home/>
