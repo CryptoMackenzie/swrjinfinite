@@ -1938,6 +1938,61 @@ footer {
 
 
 /* For Roadmap Button Slider */
+.Features_slider_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Features_slider_card {
+  position: relative;
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-image: radial-gradient(circle, #4e0131c4, #390a32cc, #240e2ec4, #130b26c9, #00031bc2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /* background-image: linear-gradient(to right bottom, #301a30, #471e48, #602061, #79207a, #941d95); */
+  width: 300px;
+  height: 370px;
+  color: #E6E7E8;
+  /* border-radius: 10px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Features_slider_card img {
+  position: absolute;
+  width: 170px;
+  margin-left: 50%;
+  transform: translate(-50%, -6.5rem) ;
+  filter: drop-shadow(5px 5px 10px rgba(182, 174, 173, 0.4));
+}
+
+.Features_slider_card .Features_slider_card-data {
+  margin-top: 4rem;
+  padding: 10px;
+  overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.Feature_card-title{
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #e41df7;
+  margin-bottom: 20px;
+  text-align: center !important;
+}
+
+.swiper_1 {
+  width: 100% ;
+  height: 90vh !important;
+}
 
 
 

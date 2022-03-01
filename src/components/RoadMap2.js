@@ -4,13 +4,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useWindowWidth } from "@react-hook/window-size";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation,Autoplay } from "swiper";
 
 import "../components/component Styles/Carousel2.css";
 
 function RoadMap2() {
+  const screenWidth = useWindowWidth();
   const [qValue, setQValue] = useState("q1");
 
   var btns = document.getElementsByClassName("btn_roadmap");
@@ -30,16 +32,17 @@ function RoadMap2() {
         <h1 className="text-[#a64af7] tracking-[10px] text-[2rem] mt-5 lg:text-5xl text-center drop-shadow-2xl text-shadow-1 specialH2 m-10">
           Release RoadMap
         </h1>
+        {screenWidth<=750?<p className="text-base text-center">(Swipe Left/Right on the Buttons)</p> :""}
       </div>
-      <div className="w-full h-full mb-10">
+      <div className="w-[90%] h-full mb-10">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
           slidesPerGroup={3}
           loop={true}
           loopFillGroupWithBlank={true}
-          navigation={true}
-          modules={[Pagination, Navigation]}
+          navigation={screenWidth>=750?true:false}
+          modules={[Pagination,Autoplay, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>

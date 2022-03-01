@@ -27,7 +27,8 @@
     /* display: none; */
     font-size: 1rem;
     /* content: url("../../assets/arrow-right-solid.svg") !important;  */
-    font-size: 20px !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
     animation: moveLeftRight 2s infinite ease-in-out;
     
 }
@@ -38,7 +39,7 @@
     font-size: 1rem;
     font-weight: 900 !important;
     /* content: url("../../assets/arrow-right-solid.svg") !important;  */
-    font-size: 20px !important;
+    font-size: 25px !important;
     animation: moveRightLeft 2s infinite ease-in-out;
     
 }
