@@ -24,10 +24,10 @@ function App() {
       <Home/>
       <Story/>
       
-      <Sequncer/>
+      {/* <Sequncer/> */}
       <Carousal/>
       
-      <h1 className='text-[#a64af7] font-bold tracking-[10px] text-[2rem] mt-10 mb:mt-0 lg:text-5xl text-center drop-shadow-2xl text-shadow-1 m-1 specialH2'>Features Of Swaraj</h1>
+      <h1 className='text-[#ffffff] font-bold tracking-[10px] text-[2rem] mt-10 mb:mt-0 lg:text-5xl text-center drop-shadow-2xl text-shadow-1 m-1'>Features Of Astra Nova</h1>
       <p className="text-base text-center">(Swipe Left/Right on the Cards)</p>
       <FeaturesSlider/>
       {/* <div className="flex pokercard justify-center justify-items-center">

@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import polygonLogo from "../assets/icons/polygon-badge.png";
 import Typewriter from "typewriter-effect";
-import vdo from "../assets/globe.mp4";
+import vdo from "../assets/movieout.12.mp4";
 import freedompaper from "../assets/freedompaper.pdf"
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const Home = () => {
         {/* Header */}
         <nav className="px-10 pt-5 grid grid-cols-1 lg:grid-cols-4 ">
           <div className="flex justify-center lg:justify-start">
-              <img src={logo} alt="logo" className="w-[100px]" />
+              <img src={logo} alt="logo" className="w-[300px]" />
           </div>
 
           <div className="text-right hidden lg:block col-span-3">
@@ -53,7 +53,7 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "The New Standard For Freedom and Self-Governance",
+                    "Your Portal To Freedom.",
                   ],
                   autoStart: true,
                   loop: true,
@@ -61,8 +61,8 @@ const Home = () => {
               />
             </h1>
             <span className="mt-10 block text-1xl font-bold text-[#a64af7]">
-              A truly community driven Metaverse project,
-              <br /> built On The Concept Of <span className="text-white inline-block md-block">Self Governance.</span>
+              A truly community driven metaverse project, 
+              <br /> built On The Concept Of <span className="text-white inline-block md-block">Self Governance & limitless creativity.</span>
             </span>
             
             <p class="glitch">
@@ -96,7 +96,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex pt-20 pb-10 mt-10   justify-center items-center">
+{ /*     <div className="flex pt-20 pb-10 mt-10   justify-center items-center">
         <iframe 
           width={`${Math.min(screenWidth, 1000)}`}
           height={`${0.5625*Math.min(screenWidth, 1000)}`}
@@ -107,6 +107,7 @@ const Home = () => {
           allowfullscreen>
         </iframe>
       </div>
+              */}
     </>
   );
 };

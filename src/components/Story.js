@@ -43,7 +43,7 @@ const Story = () => {
         <div className='place-self-center'>
           <h1 className='text-[#a64af7] tracking-[10px] text-[2rem] lg:text-5xl drop-shadow-2xl w-[300px] text-shadow-1  specialH2 font-black' >Meet the Deviants</h1>
         </div>
-        <div className='place-items-center place-content-center row-span-2 grid grid-cols-2 h-auto h-[340px] md:h-[400px] overflow-hidden'>
+        <div className='place-items-center place-content-center row-span-2 grid grid-cols-2 h-auto h-[340px] md:h-[600px] overflow-hidden'>
           <div className=''>
             <video
               src={deviant}
@@ -86,7 +86,7 @@ const Story = () => {
           <h1 className='text-[#a64af7] tracking-[10px] text-[2rem] lg:text-5xl drop-shadow-2xl pt-[5%] pl-[6%] text-shadow-1  specialH2 font-black pr-10' >Orion's Realm Series</h1>
         </div>
         <div className="mt-10 row-span-2 place-self-center">
-          <img src={orion} alt="" className=' boxs md:w-[100%] place-self-center ' />
+          <img src={orion} alt="" className=' boxs' />
         </div>
         <div className='md:col-start-2 mt-[5%] pl-[5%] pr-[5%]'>
           <p className='text-white text-base font-bold lg:text-xl pl-[5%] pr-[5%]'>
